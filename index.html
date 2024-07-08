@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Primer Challenger</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Parte Izquierda de la pantalla -->
+         <div class="logo">
+            <img src="./static/img/alura.png" alt="logo alura">
+         </div>
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí ..."></textarea>
+        </div>
+        <div class="terminos">
+            <p>solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button type="button" class="btn_encriptar" onclick="encriptar()">
+                Encriptar
+            </button>
+            <button type="button" class="btn_desencriptar" onclick="desencriptar()">
+                Desencriptar
+            </button>
+        </div>
+        <!-- Parte derecha de la pantalla -->
+        <div class="encriptado">
+            <img src="./static/img/muñeco.png" alt="Muñeco" id="muñeco">
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+                <h2 id="titulo_mensaje">Ningún mensaje encontrado</h2>
+                <p id="parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="10" rows="3" class="mensaje"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="./static/js/js.js"></script>
+</body>
+</html>
